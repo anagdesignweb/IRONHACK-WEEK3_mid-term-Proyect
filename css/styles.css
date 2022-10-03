@@ -34,13 +34,17 @@ h4{
     font-weight: 700;
 }
 
-.bodyIntroText{
+.bodyIntroText-medium{
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 500;
 }
-.headlineText{
+.headlineText-regular{
     font-size: 17px;
     font-weight: 300;
+}
+.headlineText-medium{
+    font-size: 17px;
+    font-weight: 500;
 }
 .caption1Text{
     font-size: 15px;
@@ -49,6 +53,11 @@ h4{
 .caption2Text{
     font-size: 13px;
     font-weight: 300;
+}
+
+/*class para enlace actual*/
+.active{
+    color: #0082f3 !important;
 }
 
 /*basicos*/
@@ -85,7 +94,6 @@ body{
     border:1px solid #6B708D;
 
 }
-
 .navbar-nav{
     display: flex;
     flex-direction: row;
@@ -93,3 +101,21 @@ body{
     padding: 0px;
     gap: 60px;
 }
+.navbar-nav > a{
+    text-decoration: none;
+    color: var(--color-neutral-medium);
+}
+.navbar-nav > a:hover{
+    color: var(--color-primary-default) !important;
+}
+.btn{
+    background-color: var(--color-primary-default);
+    padding: 15px 36px;
+    color: white;
+    border:1px solid var(--color-primary-default);
+}
+
+
+
+
+
