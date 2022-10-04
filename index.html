@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body class="flex-container">
-    <!-- <div class="container-body"> -->
         <header class="navbar flex-item">
             <div class="container-navbar">
                 <div class="navbar-logo">
@@ -24,8 +23,8 @@
                 </div>    
             </div>
         </header>
-        <main class="main flex-item">
-            <section class="heroSection">
+        <main class="main">
+            <section class="heroSection flex-item">
                 <div class="container-heroSection">
                     <div class="heroSection-content">
                         <h1>Empower Your Business With Stunning Design!</h1>
@@ -54,10 +53,10 @@
                 </div>
             </section>
             <section class="flex-item">
-                <div class="proyectsSection">
+                <div class="container-cards">
                     <h3>Recent Projects</h3>
-                    <div class="proyectsSection-proyects">
-                        <div class="proyect-cards">
+                    <div class="Section-CARDS">
+                        <div class="card-1">
                             <img class="card-img" src="./img/projects-section/1.jpg" alt=""> 
                             <div class="card-text">
                                 <div>
@@ -67,7 +66,7 @@
                                 <a class="card-learnMore" href="">Learn more</a>
                             </div>                           
                         </div>
-                        <div class="proyect-cards">
+                        <div class="card-1">
                             <img class="card-img" src="./img/projects-section/1.jpg" alt=""> 
                             <div class="card-text">
                                 <div>
@@ -77,7 +76,7 @@
                                 <a class="card-learnMore" href="">Learn more</a>
                             </div>                           
                         </div>
-                        <div class="proyect-cards">
+                        <div class="card-1">
                             <img class="card-img" src="./img/projects-section/1.jpg" alt=""> 
                             <div class="card-text">
                                 <div>
@@ -87,27 +86,66 @@
                                 <a class="card-learnMore" href="">Learn more</a>
                             </div>                           
                         </div>
-                    </div>
-                    
+                    </div>    
                 </div>
             </section>
-            <section class="testimonialSection">
-                <div class="testimonialSection-emojis">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
-                <div class="testimonialSection-texto">
-                    <p></p>
-                    <p></p>
-                    <div>
-                        <img src="" alt="">
-                        <p></p>
+            <section class="testimonialSection flex-item-2">
+                    <div class="testimonialSection-texto">
+                        <h3>Hear What Our Clients Have to Say</h3>
+                        <p class="bodyIntroText-medium amarillo">“Circle helped us through every stage of our startup. We really enjoyed working with you.”</p>
+                        <div class="clients-information">
+                            <img src="./img/testimonial-section/profile.png" alt="">
+                            <div>
+                                <p>Kristin Watson</p>
+                                <p>Booking.com</p>
+                            </div>
+                        </div>
                     </div>
+                    <img class="emoji-1" src="./img/testimonial-section/memoji-1.png" alt="">
+                    <img class="emoji-2" src="./img/testimonial-section/memoji-2.png" alt="">
+                    <img class="emoji-3" src="./img/testimonial-section/memoji-3.png" alt="">
+                    <img class="emoji-4" src="./img/testimonial-section/memoji-4.png" alt="">    
+            </section>
+
+            <section class="flex-item">
+                <div class="container-cards">
+                    <h3>Our Services</h3>
+                    <div class="Section-CARDS">
+                        <div class="card-2">
+                            <img class="card-img-log" src="./img/services-section/icons/1.svg" alt="">                            
+                            <div class="card-text-2">
+                                <div>
+                                    <p class="bodyIntroText-medium">Simplify</p>
+                                    <p class="">UI Design & App Development sxzdfcghjdfgyh jnsdxfcvbhn dxfcghbszxcfghvbxc vb xcghdxfcghbzxdf</p>    
+                                </div>
+                            </div>
+                            <a class="card-learnMore" href="">Learn more</a>                           
+                        </div>
+                        <div class="card-2">
+                            <img class="card-img-log" src="./img/services-section/icons/2.svg" alt="">                            
+                            <div class="card-text-2">
+                                <div>
+                                    <p class="bodyIntroText-medium">Simplify</p>
+                                    <p class="">UI Design & App Development sxzdfcghjdfgyh jnsdxfcvbhn dxfcghbszxcfghvbxc vb xcghdxfcghbzxdf</p>    
+                                </div>
+                            </div>
+                            <a class="card-learnMore" href="">Learn more</a>                           
+                        </div>
+                        <div class="card-2">
+                            <img class="card-img-log" src="./img/services-section/icons/3.svg" alt="">                            
+                            <div class="card-text-2">
+                                <div>
+                                    <p class="bodyIntroText-medium">Simplify</p>
+                                    <p class="">UI Design & App Development sxzdfcghjdfgyh jnsdxfcvbhn dxfcghbszxcfghvbxc vb xcghdxfcghbzxdf</p>    
+                                </div>
+                            </div>
+                            <a class="card-learnMore" href="">Learn more</a>                           
+                        </div>
+                    </div>    
                 </div>
             </section>
-            <!-- <section class="servicesSection">
+
+            <section class="servicesSection">
                 <div class="container">
                     <p></p>
                     <div>
@@ -117,23 +155,23 @@
                     </div>
                 </div>
             </section>
-            <section class="ctaSection">
-                <div class="container">
-                    <h3></h3>
-                    <p></p>
+            <section class="ctaSection flex-item-2">
+                    <h3>Do you have any questions?</h3>
+                    <p>Let us help you!</p>
                     <div>
-                        <input type="text">
-                        <button></button>  
+                        <div class="textfield-div">
+                            <div class="textfield-icon"></div>
+                            <input class="textfield-input" type="text" placeholder="Enter your email"> 
+                        </div>
+                        <button class="btn">Suscribe</button>  
                     </div>
-                </div>
-                <div class="ctaSection-fondo"></div>
-            </section> -->
+            </section>
         </main>
-        <!-- <footer class="footer">
-            <div>
+        <footer class="footer flex-item">
+            <div class="footer-container">
                 <div class="footer-content">
                     <img src="img/logos/circle.svg" alt="">
-                    <p></p>
+                    <p>2972 Westheimer Rd. Santa Ana, <br> Illinois 85486 </p>
                 </div>
                 <div class="footer-links">
                     <div>
@@ -148,7 +186,6 @@
                     </div>
                 </div>
             </div>
-        </footer>    -->
-    <!-- </div>   -->
+        </footer>   
 </body>
 </html>
