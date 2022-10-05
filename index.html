@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body class="flex-container">
+    
+            <!-- -------- header con el menu de nav -------- -->
+
         <header class="navbar flex-item">
             <div class="container-navbar">
                 <div class="navbar-logo">
@@ -16,13 +19,16 @@
                 <nav class="navbar-nav">
                     <a class="active" href="./index.html">Home</a>
                     <a href="./proyect.html">Proyects</a>
-                    <a href="">Services</a>
+                    <a class="not-active" href="">Services</a>
                 </nav>
                 <div class="navbar-btn">
-                    <button class="btn">Contact Us</button>
+                    <a href="./contact.html" target="_self"><button id="btn-enlace-form" class="btn">Contact Us</button></a>
                 </div>    
             </div>
         </header>
+
+                <!-- -------- main con todas las sections -------- -->
+
         <main class="main">
             <section class="heroSection flex-item">
                 <div class="container-heroSection">
@@ -33,7 +39,6 @@
                             <button class="btn">Get in touch</button>
                             <a href="">See our work</a>
                         </div>
-
                     </div>
                     <div class="heroSection-image">
                         <img class="imagen-chico" src="./img/hero-section/hero-image.png" alt="">
@@ -52,43 +57,19 @@
 
                 </div>
             </section>
+
+        <!-- seccion CARDS - se carga con javascript y datos desde la API -->
+
             <section class="flex-item">
                 <div class="container-cards">
                     <h3>Recent Projects</h3>
-                    <div class="Section-CARDS">
-                        <div class="card-1">
-                            <img class="card-img" src="./img/projects-section/1.jpg" alt=""> 
-                            <div class="card-text">
-                                <div>
-                                    <p class="bodyIntroText-medium">Simplify</p>
-                                    <p>UI Design & App Development</p>    
-                                </div>
-                                <a class="card-learnMore" href="">Learn more</a>
-                            </div>                           
-                        </div>
-                        <div class="card-1">
-                            <img class="card-img" src="./img/projects-section/1.jpg" alt=""> 
-                            <div class="card-text">
-                                <div>
-                                    <p class="bodyIntroText-medium">Simplify</p>
-                                    <p>UI Design & App Development</p>    
-                                </div>
-                                <a class="card-learnMore" href="">Learn more</a>
-                            </div>                           
-                        </div>
-                        <div class="card-1">
-                            <img class="card-img" src="./img/projects-section/1.jpg" alt=""> 
-                            <div class="card-text">
-                                <div>
-                                    <p class="bodyIntroText-medium">Simplify</p>
-                                    <p>UI Design & App Development</p>    
-                                </div>
-                                <a class="card-learnMore" href="">Learn more</a>
-                            </div>                           
-                        </div>
+                    <div id="cards-js" class="Section-CARDS">   
                     </div>    
                 </div>
             </section>
+          
+        <!-- seccion testimonial -->  
+
             <section class="testimonialSection flex-item-2">
                     <div class="testimonialSection-texto">
                         <h3>Hear What Our Clients Have to Say</h3>
@@ -107,6 +88,8 @@
                     <img class="emoji-4" src="./img/testimonial-section/memoji-4.png" alt="">    
             </section>
 
+        <!-- seccion services con mas cards -->  
+
             <section class="flex-item">
                 <div class="container-cards">
                     <h3>Our Services</h3>
@@ -115,8 +98,8 @@
                             <img class="card-img-log" src="./img/services-section/icons/1.svg" alt="">                            
                             <div class="card-text-2">
                                 <div>
-                                    <p class="bodyIntroText-medium">Simplify</p>
-                                    <p class="">UI Design & App Development sxzdfcghjdfgyh jnsdxfcvbhn dxfcghbszxcfghvbxc vb xcghdxfcghbzxdf</p>    
+                                    <p class="bodyIntroText-medium">User Interface Design</p>
+                                    <p class="">Circle provides you with a stunning user interface design that is accessible to everyone.</p>    
                                 </div>
                             </div>
                             <a class="card-learnMore" href="">Learn more</a>                           
@@ -125,8 +108,8 @@
                             <img class="card-img-log" src="./img/services-section/icons/2.svg" alt="">                            
                             <div class="card-text-2">
                                 <div>
-                                    <p class="bodyIntroText-medium">Simplify</p>
-                                    <p class="">UI Design & App Development sxzdfcghjdfgyh jnsdxfcvbhn dxfcghbszxcfghvbxc vb xcghdxfcghbzxdf</p>    
+                                    <p class="bodyIntroText-medium">User Experience Design</p>
+                                    <p class="">Circle always focuses on delivering the best user experience to your customers.</p>    
                                 </div>
                             </div>
                             <a class="card-learnMore" href="">Learn more</a>                           
@@ -135,8 +118,8 @@
                             <img class="card-img-log" src="./img/services-section/icons/3.svg" alt="">                            
                             <div class="card-text-2">
                                 <div>
-                                    <p class="bodyIntroText-medium">Simplify</p>
-                                    <p class="">UI Design & App Development sxzdfcghjdfgyh jnsdxfcvbhn dxfcghbszxcfghvbxc vb xcghdxfcghbzxdf</p>    
+                                    <p class="bodyIntroText-medium">Application Development</p>
+                                    <p class="">We develop high-quality mobile and web applications using the latest technology stack.</p>    
                                 </div>
                             </div>
                             <a class="card-learnMore" href="">Learn more</a>                           
@@ -145,37 +128,17 @@
                 </div>
             </section>
 
-            <section class="ctaSection flex-item-2">
-                    <h3>Do you have any questions?</h3>
-                    <p>Let us help you!</p>
-                    <div>
-                        <div class="textfield-div">
-                            <div class="textfield-icon"></div>
-                            <input class="textfield-input" type="text" placeholder="Enter your email"> 
-                        </div>
-                        <button class="btn">Suscribe</button>  
-                    </div>
+                    <!-- seccion CTA - do you have any questions  - se carga con javascript -->  
+
+            <section id="id-section-CTA" class="ctaSection flex-item-2">
             </section>
         </main>
-        <footer class="footer flex-item">
-            <div class="footer-container">
-                <div class="footer-content">
-                    <img src="img/logos/circle.svg" alt="">
-                    <p>2972 Westheimer Rd. Santa Ana, <br> Illinois 85486 </p>
-                </div>
-                <div class="footer-links">
-                    <div>
-                        <a href="">Team</a>
-                        <a href="">Services</a>
-                        <a href="">About Us</a>
-                    </div>
-                    <div>
-                        <a href="">Press</a>
-                        <a href="">Proyects</a>
-                        <a href="">Privacy Policy</a>
-                    </div>
-                </div>
-            </div>
-        </footer>   
+
+        <!-- footer  se carag con javascript -->
+
+        <footer id="id-footer" class="footer flex-item">
+        </footer>
+
+        <script src="./js/index.js"></script>  
 </body>
 </html>

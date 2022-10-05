@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page MID-TERM proyect - Ana García Carrasco</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="flex-container">
+        <header class="navbar flex-item">
+            <div class="container-navbar">
+                <div class="navbar-logo">
+                    <img src="img/logos/circle.svg" alt="">
+                </div>
+                <nav class="navbar-nav">
+                    <a href="./index.html">Home</a>
+                    <a href="./proyect.html">Proyects</a>
+                    <a class="not-active" href="">Services</a>
+                </nav>
+                <div class="navbar-btn">
+                    <a href="./contact.html" target="_self"><button id="btn-enlace-form" class="btn">Contact Us</button></a>
+                </div>    
+            </div>
+        </header>
+        <main class="main flex-item">
+<!-- CONTACT FORM -->
+            <div class="contact-section">
+                <h3 class="contact-us">Contact Us</h3>
+                <form id="contact-form">
+                    <div class="form-marginBot">
+                        <label>Full Name *</label>
+                        <input class="full headlineText-regular form-inputs" type="text" name="name" id="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="contact-mid form-marginBot">
+                        <div class="mid">
+                                <label>E-mail Address</label>
+                                <input class="full headlineText-regular form-inputs" type="email" name="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mid">
+                            <label>Phone Number</label>
+                            <input class="full headlineText-regular form-inputs" type="text" name="phone" id="phone" placeholder="Enter your phone">
+                        </div>
+                    </div>
+                    <div class="form-marginBot">
+                        <label>Message *</label>
+                        <textarea class="full headlineText-regular form-inputs" name="message" rows="5" id="message" placeholder="Write your message here..." required></textarea>
+                    </div>
+                    <div class="full">
+                        <button class="full btn-form" type="submit">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+    <!-- End #contact-form -->
+        </main>
+        <footer class="footer flex-item">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <img src="img/logos/circle.svg" alt="">
+                    <p>2972 Westheimer Rd. Santa Ana, <br> Illinois 85486 </p>
+                </div>
+                <div class="footer-links">
+                    <div>
+                        <a href="">Team</a>
+                        <a href="">Services</a>
+                        <a href="">About Us</a>
+                    </div>
+                    <div>
+                        <a href="">Press</a>
+                        <a href="">Proyects</a>
+                        <a href="">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>   
+</body>
+</html>
