@@ -1,0 +1,35 @@
+/* --- header --- */
+
+
+
+.navbar {
+    box-sizing: border-box;
+    height: 122px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 52px;
+
+}
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 60px;
+}
+
+.navbar-nav > a:hover{
+    color: var(--color-primary-default) !important;
+}
+
+#nav-contact{
+    display: none;
+}

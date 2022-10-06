@@ -1,0 +1,11 @@
+/* -- section 2 -> Clients -- */
+
+.clientSection{
+    margin-top: 130px;
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    filter: grayscale(100%);
+}

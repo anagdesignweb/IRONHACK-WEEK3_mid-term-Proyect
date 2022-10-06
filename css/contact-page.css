@@ -1,0 +1,58 @@
+
+/*---------------------- CONTACT PAGE -------------------------*/
+
+/* ---- form ----- */
+.contact-section{
+    margin-top: 140px;
+    margin-bottom: 140px;
+    width: 100%;
+}
+.contact-us{
+    margin-bottom: 80px;
+}
+#contact-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+form label{
+    display: block;
+    margin-bottom: 10px;
+}
+form input{
+    padding-left: 20px;
+    height: 70px;
+}
+.form-inputs:focus{
+    outline: none;
+    border: 2px solid var(--color-neutral-medium);
+}
+form textarea{
+    min-height: 140px;
+    height: 200px;
+    padding: 20px;
+    resize: vertical;
+}
+.full{
+    width: 100%;
+    border: none;
+    background-color: rgba(107, 112, 141, 0.1);
+}
+.mid{
+    width: 50%;
+}
+.contact-mid{
+    display: flex;
+    gap: 20px;
+}
+.btn-form{
+    background-color: var(--color-primary-default);
+    padding: 15px 36px;
+    height: 80px;
+    color: white;
+    border:1px solid var(--color-primary-default);
+}
+
+.form-marginBot{
+    margin-bottom: 40px;
+}

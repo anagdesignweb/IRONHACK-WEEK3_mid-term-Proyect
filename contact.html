@@ -27,19 +27,19 @@
 <!-- CONTACT FORM -->
             <div class="contact-section">
                 <h3 class="contact-us">Contact Us</h3>
-                <form id="contact-form">
+                <form action="" id="contact-form" name="contact-form">
                     <div class="form-marginBot">
                         <label>Full Name *</label>
-                        <input class="full headlineText-regular form-inputs" type="text" name="name" id="name" placeholder="Enter your full name" required>
+                        <input class="full headlineText-regular form-inputs" type="text" name="name" id="name" placeholder="Enter your full name" required autofocus pattern="^[A-ZÀ]{1}[a-zA-ZÀ-ÿ\u00f1\u00d1\s]{2,40}$">
                     </div>
                     <div class="contact-mid form-marginBot">
                         <div class="mid">
                                 <label>E-mail Address</label>
-                                <input class="full headlineText-regular form-inputs" type="email" name="email" id="email" placeholder="Enter your email" required>
+                                <input class="full headlineText-regular form-inputs" type="email" name="email" id="email" placeholder="Enter your email" value="" required pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}">
                         </div>
                         <div class="mid">
                             <label>Phone Number</label>
-                            <input class="full headlineText-regular form-inputs" type="text" name="phone" id="phone" placeholder="Enter your phone">
+                            <input class="full headlineText-regular form-inputs" type="text" name="phone" id="phone" placeholder="Enter your phone" required value="">
                         </div>
                     </div>
                     <div class="form-marginBot">
@@ -49,7 +49,6 @@
                     <div class="full">
                         <button class="full btn-form" type="submit">Submit</button>
                     </div>
-
                 </form>
             </div>
     <!-- End #contact-form -->

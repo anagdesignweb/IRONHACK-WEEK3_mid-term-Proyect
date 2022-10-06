@@ -1,0 +1,70 @@
+/* ------ section 1 -> Hero ------ */
+
+.heroSection{
+    border: 1px solid red;
+    width: 100%;
+    height: 650px;
+    box-sizing: border-box;
+    margin-top: 100px;
+}
+
+
+.container-heroSection{
+    border: 3px solid rgb(255, 187, 0);
+        width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroSection-content{
+    border: 1px solid rgb(55, 0, 255);
+    width: 530px;
+    height: 422px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.heroSection-image{
+    border: 1px solid rgb(48, 209, 16);
+    width: calc(100% - 550px);
+    height: 100%;
+    position: relative;
+}
+.heroSection-content > p{
+    max-width: 435px;
+}
+.heroSection-content > div > button{
+    margin-right: 40px;
+}
+
+.heroSection-image-card-1{
+    position: absolute;
+    top: -20px;
+    left: -50px;
+    width: 310px;
+    height: 350px;
+    z-index: 2;
+    
+}
+.heroSection-image-card-2{
+    position: absolute;
+    width: 290px;
+    height: 330px;
+    bottom: -70px;
+    right: -70px;
+    z-index: 2;
+}
+.imagen-chico{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: auto;
+    border: 1px solid pink;
+}

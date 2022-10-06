@@ -1,0 +1,52 @@
+/* -- section 6 -- CTA section */
+
+.ctaSection{
+    height: 500px;
+    margin-top: 130px;
+    margin-bottom: 200px;
+    background-color: var(--color-secondary-1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.ctaSection > p{
+    color: var(--color-neutral-dark);
+    padding-top: 20px;
+}
+.ctaSection > div{
+    padding-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+.ctaSection > div > button{
+width: 200px;
+}
+.textfield-div{
+    position: relative;  
+    width: 393px;
+    height: 80px;
+  }
+  .textfield-icon{
+      position: absolute;
+      left: 5%;
+      top: 30%;
+      right: auto;
+      bottom: auto;
+      width: 30px;
+      height: 30px;
+      background-image: url(../img/newsletter/icon/mail.svg);
+      background-position: 50% 50%;
+      background-size: auto;
+      background-repeat: no-repeat;
+  
+  }
+  .textfield-input{
+      width: 393px;
+      height: 80px;
+      margin-bottom: 0px;
+      padding-left: 70px;
+      background-color: #ecf7ff;
+      color: #292e47;
+      border: 1px solid #cccccc;
+  }
