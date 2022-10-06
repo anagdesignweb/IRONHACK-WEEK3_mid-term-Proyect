@@ -30,21 +30,21 @@
                 <form action="" id="contact-form" name="contact-form">
                     <div class="form-marginBot">
                         <label>Full Name *</label>
-                        <input class="full headlineText-regular form-inputs" type="text" name="name" id="name" placeholder="Enter your full name" required autofocus pattern="^[A-ZÀ]{1}[a-zA-ZÀ-ÿ\u00f1\u00d1\s]{2,40}$">
+                        <input class="input-form full form-inputs" type="text" name="name" id="name" placeholder="Enter your full name" required autofocus pattern="^[A-ZÀ]{1}[a-zA-ZÀ-ÿ\u00f1\u00d1\s]{2,40}$">
                     </div>
                     <div class="contact-mid form-marginBot">
                         <div class="mid">
                                 <label>E-mail Address</label>
-                                <input class="full headlineText-regular form-inputs" type="email" name="email" id="email" placeholder="Enter your email" value="" required pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}">
+                                <input class="input-form full form-inputs" type="email" name="email" id="email" placeholder="Enter your email" value="" required pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}">
                         </div>
                         <div class="mid">
                             <label>Phone Number</label>
-                            <input class="full headlineText-regular form-inputs" type="text" name="phone" id="phone" placeholder="Enter your phone" required value="">
+                            <input class="input-form full form-inputs" type="text" name="phone" id="phone" placeholder="Enter your phone" required value="">
                         </div>
                     </div>
                     <div class="form-marginBot">
                         <label>Message *</label>
-                        <textarea class="full headlineText-regular form-inputs" name="message" rows="5" id="message" placeholder="Write your message here..." required></textarea>
+                        <textarea class="full form-inputs" name="message" rows="5" id="message" placeholder="Write your message here..." required></textarea>
                     </div>
                     <div class="full">
                         <button class="full btn-form" type="submit">Submit</button>
@@ -53,25 +53,9 @@
             </div>
     <!-- End #contact-form -->
         </main>
-        <footer class="footer flex-item">
-            <div class="footer-container">
-                <div class="footer-content">
-                    <img src="img/logos/circle.svg" alt="">
-                    <p>2972 Westheimer Rd. Santa Ana, <br> Illinois 85486 </p>
-                </div>
-                <div class="footer-links">
-                    <div>
-                        <a href="">Team</a>
-                        <a href="">Services</a>
-                        <a href="">About Us</a>
-                    </div>
-                    <div>
-                        <a href="">Press</a>
-                        <a href="">Proyects</a>
-                        <a href="">Privacy Policy</a>
-                    </div>
-                </div>
-            </div>
-        </footer>   
+        <footer id="id-footer" class="footer flex-item">
+        </footer>
+
+        <script src="./js/index.js"></script>   
 </body>
 </html>

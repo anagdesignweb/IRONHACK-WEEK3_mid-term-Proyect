@@ -1,11 +1,12 @@
 /* --- footer --- */
 
 .footer{
-    height: 240px;
-
+    height: 200px;
+    padding: 5px;
 }
 .footer-container{
     height: 120px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content:space-between;
@@ -13,30 +14,36 @@
 }
 .footer-content{
     height: 100%;
-
     display: flex;
     flex-direction: column;
     align-items:baseline;
     justify-content:space-between;
 }
 .footer-content > img{
-   height: 35px;
+    height: 35px;
 }
 .footer-content > p{
- line-height: 20pt;    
+    line-height: 20pt;    
 }
 
 .footer-links {
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items:baseline;
+    align-items:flex-end;
     justify-content:space-around;
-    text-align: left;
 }
-.footer-links > div > a{
-    padding-left: 100px;
+.footer-links > div{
+    display: flex;
+    text-align: center;
+}
+.footer-links > div > div{
+    width: 150px;
+}
+.footer-links a{
     font-weight: 400;
+
 }
 .footer-links > div > a:hover{
     color: var(--color-primary-default);

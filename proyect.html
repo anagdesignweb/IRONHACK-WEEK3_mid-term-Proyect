@@ -11,21 +11,24 @@
 
             <!-- -------- header con el menu de nav -------- -->
         
-        <header class="navbar flex-item">
-            <div class="container-navbar">
-                <div class="navbar-logo">
-                    <img src="img/logos/circle.svg" alt="">
+            <header class="navbar flex-item">
+                <div class="container-navbar">
+                    <div class="navbar-logo">
+                        <img src="img/logos/circle.svg" alt="">
+                    </div>
+                    <label for="toggle">&#9776;</label>
+                    <input type="checkbox" id="toggle"/>
+                    <nav class="navbar-nav menu">
+                        <a href="./index.html">Home</a>
+                        <a class="active" href="./proyect.html">Proyects</a>
+                        <a class="not-active" href="">Services</a>
+                        <a id="nav-contact" href="./contact.html">Contact Us</a>
+                    </nav>
+                    <div class="navbar-btn">
+                        <a href="./contact.html" target="_self"><button id="btn-enlace-form" class="btn">Contact Us</button></a>
+                    </div>    
                 </div>
-                <nav class="navbar-nav">
-                    <a href="./index.html">Home</a>
-                    <a class="active" href="./proyect.html">Proyects</a>
-                    <a class="not-active" href="">Services</a>
-                </nav>
-                <div class="navbar-btn">
-                    <a href="./contact.html" target="_self"><button id="btn-enlace-form" class="btn">Contact Us</button></a>
-                </div>
-            </div>
-        </header>
+            </header>
 
         <!-- -------- main con todas las sections -------- -->
 
@@ -50,7 +53,7 @@
             <section class="flex-item">
                 <div class="container-cards format-margin">
                     <h3>Recent Projects</h3>
-                    <div id="cards-js" class="Section-CARDS">
+                    <div id="cards-js" class="Section-CARDS-1">
 
                     </div>    
                 </div>

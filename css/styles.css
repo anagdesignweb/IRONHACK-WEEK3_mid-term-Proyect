@@ -150,6 +150,7 @@ a, button{
     text-decoration: none;
     font-size: 17px;
     font-weight: 500;
+    cursor: pointer;
 }
 button:hover{
 background-color: var(--color-neutral-dark);
@@ -262,6 +263,63 @@ background-color: var(--color-neutral-dark);
         width: 80%;
     }
 
+    /* section clients */
+    .clientSection{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .clientSection > div {
+        width: 30%;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* section proyects and services */
+
+    .container-cards{
+        margin-top: 60px;
+    }
+    .Section-CARDS-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-cards > h3 {
+        padding-left: 20px;
+    }
+    .card-1{
+        width: 90%;
+        height: 250px;
+        display: flex;
+        margin-bottom: 50px;
+    }
+    .card-img{
+        object-fit: cover;
+        width: 60%;
+        height: 100%;
+    }
+    .card-text{
+        box-sizing: border-box;
+        width: 40%;
+        height: 100%;
+    }
+
+
+    /* section testimonial */
+
+    .testimonialSection-texto{
+        width: 90%;
+        height: 45%;
+    }
+    .testimonialSection{
+        margin-top: 60px;
+    }
+
 }
  
 /* Móviles o tablets en horizontal
@@ -282,6 +340,81 @@ background-color: var(--color-neutral-dark);
         font-size: 40px;
     }
 
+
+    /* section proyects and services */
+
+
+    .card-1{
+        width: 95%;
+        height: 561px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .card-img{
+        object-fit: cover;
+        width: 100%;
+        height: 50%;
+    }
+    .card-text{
+        box-sizing: border-box;
+        width: 100%;
+        height: 50%;
+    }
+
+    /* section services */
+    .Section-CARDS-2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-2{
+        width: 95%;
+    }
+
+
+    /* section cta */
+
+    .ctaSection{
+        padding: 40px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .div-textfield{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .input-EMAIL{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .ctaSection > div > button{
+        width: 100%
+    }
+
+    /* --- footer --- */
+
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 250px;
+    }
+    .footer-content{
+        align-items:center;
+        margin-bottom: 20px;
+        height: 40%;
+    }
+    .footer-links {
+        width: 100%;
+        height: 30%;
+        align-items: center;
+    }
 
  }
  

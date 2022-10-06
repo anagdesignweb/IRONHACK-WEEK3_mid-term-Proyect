@@ -21,7 +21,7 @@ const imprimirCards = async (cuantas) => {
                 <p class="bodyIntroText-medium">${arrayDatos[i].name}</p>
                 <p>${arrayDatos[i].email}</p>    
             </div>
-            <a class="card-learnMore" href="">Learn more</a>
+            <a class="card-learnMore" href="./proyect.html">Learn more</a>
         </div>                           
     </div>`;
 
@@ -57,10 +57,11 @@ const tituloProyects = async (elementoHTML, index) => {
 
 const imprimirCTA = () => {
 
-    document.getElementById("id-section-CTA").innerHTML = `<h3>Do you have any questions?</h3>
+    document.getElementById("id-section-CTA").innerHTML = `
+    <h3>Do you have any questions?</h3>
     <p>Let us help you!</p>
-    <div>
-        <div class="textfield-div">
+    <div class="div-textfield">
+        <div class="input-EMAIL">
             <div class="textfield-icon"></div>
             <input class="textfield-input form-inputs" type="text" placeholder="Enter your email"> 
         </div>
@@ -72,24 +73,25 @@ const imprimirCTA = () => {
 
 const imprimirFooter = () => {
 
-    document.getElementById("id-footer").innerHTML = `<div class="footer-container">
-    <div class="footer-content">
-        <img src="img/logos/circle.svg" alt="">
-        <p>2972 Westheimer Rd. Santa Ana, <br> Illinois 85486 </p>
-    </div>
-    <div class="footer-links">
+    document.getElementById("id-footer").innerHTML = `
+    <div class="footer-container">
+        <div class="footer-content">
+            <img src="img/logos/circle.svg" alt="">
+            <p>2972 Westheimer Rd. Santa Ana, <br> Illinois 85486 </p>
+        </div>
+        <div class="footer-links">
         <div>
-            <a href="">Team</a>
-            <a href="">Services</a>
-            <a href="">About Us</a>
+            <div><a class="not-active" href="">Team</a></div>
+            <div><a class="not-active" href="">Services</a></div>
+            <div><a class="not-active" href="">About Us</a></div>   
         </div>
         <div>
-            <a href="">Press</a>
-            <a href="">Proyects</a>
-            <a href="">Privacy Policy</a>
+            <div><a class="not-active" href="">Press</a></div>
+            <div><a class="not-active" href="">Proyects</a></div>
+            <div><a class="not-active" href="">Privacy Policy</a></div>    
         </div>
-    </div>
-</div>`;
+        </div>
+    </div>`;
 }
 
 

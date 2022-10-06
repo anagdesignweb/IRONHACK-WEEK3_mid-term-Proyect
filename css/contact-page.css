@@ -19,7 +19,7 @@ form label{
     display: block;
     margin-bottom: 10px;
 }
-form input{
+.input-form{
     padding-left: 20px;
     height: 70px;
 }
