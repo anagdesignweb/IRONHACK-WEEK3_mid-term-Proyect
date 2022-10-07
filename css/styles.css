@@ -237,6 +237,9 @@ background-color: var(--color-neutral-dark);
         display: flex;
     }
 
+
+
+    
     /* section hero */
 
     .heroSection{
@@ -320,6 +323,15 @@ background-color: var(--color-neutral-dark);
         margin-top: 60px;
     }
 
+
+    /*------------- page form ---------- */
+    .contact-section{
+        margin-top: 40px;
+    }
+
+    .mid-imput-form{
+        width: 100%;
+    }
 }
  
 /* Móviles o tablets en horizontal

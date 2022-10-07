@@ -8,46 +8,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body class="flex-container">
-        <header class="navbar flex-item">
-            <div class="container-navbar">
-                <div class="navbar-logo">
-                    <img src="img/logos/circle.svg" alt="">
-                </div>
-                <nav class="navbar-nav">
-                    <a href="./index.html">Home</a>
-                    <a href="./proyect.html">Proyects</a>
-                    <a class="not-active" href="">Services</a>
-                </nav>
-                <div class="navbar-btn">
-                    <a href="./contact.html" target="_self"><button id="btn-enlace-form" class="btn">Contact Us</button></a>
-                </div>    
+    <header class="navbar flex-item">
+        <div class="container-navbar">
+            <div class="navbar-logo">
+                <img src="img/logos/circle.svg" alt="">
             </div>
-        </header>
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/>
+            <nav class="navbar-nav menu">
+                <a href="./index.html">Home</a>
+                <a href="./proyect.html">Proyects</a>
+                <a class="not-active" href="">Services</a>
+                <a id="nav-contact" href="./contact.html">Contact Us</a>
+            </nav>
+            <div class="navbar-btn">
+                <a href="./contact.html" target="_self"><button id="btn-enlace-form" class="btn">Contact Us</button></a>
+            </div>    
+        </div>
+    </header>
         <main class="main flex-item">
 <!-- CONTACT FORM -->
             <div class="contact-section">
-                <h3 class="contact-us">Contact Us</h3>
+                <h1 class="contact-us">Contact Us</h1>
                 <form action="" id="contact-form" name="contact-form">
-                    <div class="form-marginBot">
+                    <div class="form-marginBot full">
                         <label>Full Name *</label>
-                        <input class="input-form full form-inputs" type="text" name="name" id="name" placeholder="Enter your full name" required autofocus pattern="^[A-ZÀ]{1}[a-zA-ZÀ-ÿ\u00f1\u00d1\s]{2,40}$">
+                        <input id="name" class="input-form form-inputs" type="text" name="name" placeholder="Enter your full name" required autofocus>
+                        <!-- pattern="^[A-ZÀ]{1}[a-zA-ZÀ-ÿ\u00f1\u00d1\s]{2,40}$" -->
                     </div>
-                    <div class="contact-mid form-marginBot">
-                        <div class="mid">
-                                <label>E-mail Address</label>
-                                <input class="input-form full form-inputs" type="email" name="email" id="email" placeholder="Enter your email" value="" required pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}">
-                        </div>
-                        <div class="mid">
-                            <label>Phone Number</label>
-                            <input class="input-form full form-inputs" type="text" name="phone" id="phone" placeholder="Enter your phone" required value="">
-                        </div>
+                    <div class="form-marginBot mid-imput-form">
+                            <label>E-mail Address</label>
+                            <input id="email" class="input-form form-inputs" type="email" name="email"  placeholder="Enter your email" value="" required>
+                            <!-- pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}" -->
                     </div>
-                    <div class="form-marginBot">
+                    <div class="form-marginBot mid-imput-form">
+                        <label>Phone Number</label>
+                        <input id="phone" class="input-form form-inputs" type="number" name="phone"  placeholder="Enter your phone" value="">
+                    </div>
+                    <div class="form-marginBot full">
                         <label>Message *</label>
-                        <textarea class="full form-inputs" name="message" rows="5" id="message" placeholder="Write your message here..." required></textarea>
+                        <textarea id="message" class="full form-inputs" name="message" rows="5"  placeholder="Write your message here..." required></textarea>
                     </div>
                     <div class="full">
-                        <button class="full btn-form" type="submit">Submit</button>
+                        <button id="btn-submit" class="full btn-form" type="submit">Submit</button>
                     </div>
                 </form>
             </div>
@@ -56,6 +59,6 @@
         <footer id="id-footer" class="footer flex-item">
         </footer>
 
-        <script src="./js/index.js"></script>   
+        <script src="./js/contact.js"></script>     
 </body>
 </html>

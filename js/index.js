@@ -3,18 +3,16 @@
 
 const imprimirCards = async (cuantas) => {
 
-
     const dataFetch = await fetch("https://jsonplaceholder.typicode.com/comments");
     const arrayDatos = await dataFetch.json();
-
     // console.log(arrayDatos);
 
     let card = ``;
 
     for (let i=0; i<cuantas; i++){
-        // console.log(arrayDatos[i]);
-
-        card += `<div class="card-1">
+    // console.log(arrayDatos[i]);
+    card += `
+    <div class="card-1">
         <img class="card-img" src="./img/projects-section/${i+1}.jpg" alt=""> 
         <div class="card-text">
             <div>
@@ -28,30 +26,7 @@ const imprimirCards = async (cuantas) => {
     document.getElementById("cards-js").innerHTML = card;
 
     }
-
 }
-
-
-// PROYECT PAGE funcion para imprimir un texto y un titulo, texto cogido de la api bacon ipsun
-
-const textoProyects = async (elemento) => {
-
-    const textfetch = await fetch("https://baconipsum.com/api/?type=all-meat&paras=2&start-with-lorem=1");
-    const arrayTextos = await textfetch.json();
-
-    //console.log(arrayTextos);
-    document.getElementById(elemento).innerHTML = arrayTextos;
-};
-
-
-const tituloProyects = async (elementoHTML, index) => {
-
-    const tutulofetch = await fetch("https://jsonplaceholder.typicode.com/posts");
-    const arrayTitulo = await tutulofetch.json();
-
-    //console.log(arrayTitulo[index].title);
-    document.getElementById(elementoHTML).innerHTML = arrayTitulo[index].title;
-};
 
 // funcion para imprimir seccion CTA
 
@@ -97,12 +72,11 @@ const imprimirFooter = () => {
 
 
 
+// funcion para cargar cuando windows se haya iniciado
+
 const inicio = () => {
-    
+
     imprimirCards(3);
-    textoProyects("articleText");
-    tituloProyects("article-titulo-js", 1);
-    tituloProyects("article-sub-js", 1);
     imprimirCTA();
     imprimirFooter();
 };

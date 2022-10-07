@@ -1,7 +1,6 @@
 /* --- header --- */
 
 
-
 .navbar {
     box-sizing: border-box;
     height: 122px;
@@ -32,4 +31,5 @@
 
 #nav-contact{
     display: none;
+
 }
